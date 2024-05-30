@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Hello Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "hello_extensions.png"
+    },
+    "host_permissions": [
+        "https://www.googleapis.com/",
+        "https://mail.google.com/"
+
+    ],
+    "permissions": [
+        "identity"
+    ],
+    "oauth2": {
+        "client_id": "272740754548-7slvjggpneqvsif38dg9evlhi56ah20g.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/gmail.readonly",
+            "https://www.googleapis.com/auth/gmail.modify"
+        ]
+    }
+  }
